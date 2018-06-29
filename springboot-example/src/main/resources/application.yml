@@ -1,0 +1,18 @@
+server:
+  # 修改端口号
+  port: 7777
+  servlet:
+    #修改项目上下文
+    context-path: /example
+    session:
+      timeout:
+        20
+  tomcat:
+    uri-encoding: UTF-8
+    max-connections: 300
+spring:
+  devtools:
+    restart:
+      enabled: true
+      additional-paths:
+      - src/main/java    
